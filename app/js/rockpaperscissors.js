@@ -44,17 +44,17 @@ function getWinner(playerMove,computerMove) {
     // The rules of the game are that 'rock' beats 'scissors', 'scissors' beats 'paper', and 'paper' beats 'rock'.
     /* YOUR CODE HERE */
 
-    if (playerMove == computerMove) {
-        winner = "Tie"
-    } else if (playerMove == 'rock' && computerMove == 'scissors') {
-        winner = "Player"
-    } else if (playerMove == 'paper' && computerMove == 'rock') {
-        winner = "Player"
-    } else if (playerMove == 'scissors' && computerMove == 'paper') {
-        winner = "Player"
+    if (playerMove === computerMove) {
+        winner = "Tie";
+    } else if (playerMove === 'rock' && computerMove === 'scissors') {
+        winner = "Player";
+    } else if (playerMove === 'paper' && computerMove === 'rock') {
+        winner = "Player";
+    } else if (playerMove === 'scissors' && computerMove === 'paper') {
+        winner = "Player";
     } else {
-        winner = "Computer"
-    };
+        winner = "Computer";
+    }
 
     return winner;
 }
@@ -68,3 +68,6 @@ function playToFive() {
     return [playerWins, computerWins];
 }
 
+getPlayerMove();
+getComputerMove();
+getWinner();
